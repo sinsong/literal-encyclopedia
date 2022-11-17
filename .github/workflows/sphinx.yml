@@ -1,0 +1,22 @@
+name: Sphinx build
+on:
+  push:
+    branches: [$default-branch]
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build HTML
+      uses: ammaraskar/sphinx-action@master
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: '_build/html'
+    - name: Deploy
+      id: deployment
+      uses: actions/deploy-pages@v1

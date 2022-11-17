@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sphinx-build",
+            "type": "shell",
+            "command": "make html",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "browser",
+            "type": "shell",
+            "windows": {
+                "command": "start",
+            },
+            "linux": {
+                "command": "xdg-open",
+            },
+            "args": ["${workspaceFolder}/_build/html/index.html"],
+            // "dependsOrder": "sequence",
+            "dependsOn":["sphinx-build"],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+    ]
+}
