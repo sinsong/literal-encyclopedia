@@ -1,13 +1,15 @@
 欢迎来到莉特雅的百科全书
 ===============================
 
-这里可能拥有：编程技术、作者梦话、在这立法典、烂梗、等元素。
+| 这里可能拥有：编程技术、作者梦话、在这立法典、烂梗、等元素。
+| 如有不适，尽快适应！
 
 .. toctree::
    :maxdepth: 2
    :caption: 目录
 
    general/index
+   index/index
    unix/index
    linguistics/index
 
