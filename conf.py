@@ -37,6 +37,8 @@ html_theme_options = {
     },
     "dark_css_variables": {
         "color-brand-primary": "#6495ed",
+        "color-brand-content": "#539bf5",
+        "color-link-underline--hover": "var(--color-brand-content)",
     },
     "source_repository": "https://github.com/sinsong/literal-encyclopedia",
     "source_branch": "master",
