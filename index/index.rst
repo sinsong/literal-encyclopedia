@@ -5,3 +5,4 @@
     :maxdepth: 2
 
     rfc
+    web
