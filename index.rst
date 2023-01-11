@@ -9,6 +9,7 @@
    :caption: 目录
 
    general/index
+   cheatsheet/index
    index/index
    unix/index
    linguistics/index
