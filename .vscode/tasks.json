@@ -5,11 +5,17 @@
             "label": "sphinx-build",
             "type": "shell",
             "command": "make html",
-            "problemMatcher": [],
+            "problemMatcher": [], // 从不扫描输出的意思
             "group": {
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            "label": "sphinx-autobuild",
+            "type": "shell",
+            "command": "sphinx-autobuild . _build/html",
+            "problemMatcher": [], // 从不扫描输出的意思
         },
         {
             "label": "browser",
@@ -20,13 +26,16 @@
             "linux": {
                 "command": "xdg-open",
             },
-            "args": ["${workspaceFolder}/_build/html/index.html"],
-            // "dependsOrder": "sequence",
-            "dependsOn":["sphinx-build"],
+            "args": [
+                "${workspaceFolder}/_build/html/index.html"
+            ],
+            "dependsOn": [
+                "sphinx-build"
+            ],
             "group": {
                 "kind": "test",
                 "isDefault": true
             }
-        },
+        }
     ]
 }
