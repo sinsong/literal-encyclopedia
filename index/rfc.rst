@@ -1,10 +1,16 @@
 RFC
 ===
 
-HTTP/1.1
---------
+HTTP
+----
 
 | `RFC [9110] <https://www.rfc-editor.org/rfc/rfc9110>`_ HTTP Semantics
+| `RFC [9111] <https://www.rfc-editor.org/rfc/rfc9111>`_ HTTP Caching
+
+HTTP/1.1
+^^^^^^^^
+
+| `RFC [9112] <https://www.rfc-editor.org/rfc/rfc9112>`_ HTTP/1.1
 
 | (Obsoleted)
 | `RFC [7230] <https://tools.ietf.org/html/rfc7230>`_  Message Syntax and Routing
@@ -23,7 +29,7 @@ HTTP/1.1
 | `RFC [2608] <https://www.rfc-editor.org/rfc/rfc2068>`_ Hypertext Transfer Protocol -- HTTP/1.1
 
 HTTP/2
-------
+^^^^^^
 
 | `RFC [9113] <https://www.rfc-editor.org/rfc/rfc9113>`_ HTTP/2
 | `RFC [7541] <https://tools.ietf.org/html/rfc7541>`_ HPACK
@@ -33,9 +39,10 @@ HTTP/2
 | `RFC [8740] <https://tools.ietf.org/html/rfc8740>`_ TLS with HTTP/2
 
 HTTP/3
-------
+^^^^^^
 
 | `RFC [9114] <https://www.rfc-editor.org/rfc/rfc9114>`_ HTTP/3
+| `RFC [9204] <https://www.rfc-editor.org/rfc/rfc9204>`_ QPACK: Field Compression for HTTP/3
 
 WebSocket
 ---------
